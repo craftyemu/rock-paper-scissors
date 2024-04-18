@@ -2,10 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Rock, Paper, Scissors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors (Pokemon Stlye)</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="game.js"></script>
+    <div>
+        <h1 id="call">Select your <span class="pokemon">PoKéMoN</span> type!</h1>
+    </div>
+    <div class="gameArea" id="gameArea">
+        <div class="scoreArea" id="scoreArea">
+            <p>Player's Score</p>
+            <h1 class="playerScore" id="playerScore">0</h1>
+        </div>
+        <div class="types" id="types">
+            <div class="water">
+            <img class="pokeball" src="./images/cartoon-pokeball-sticker.png" alt="A cartoon image of a red and white pokeball">
+            <button class="waterBtn" id="waterBtn">Water</button>
+            </div>
+            <div class="grass">
+            <img class="pokeball" src="./images/cartoon-pokeball-sticker.png" alt="A cartoon image of a red and white pokeball">
+            <button class="grassBtn" id="grassBtn">Grass</button>
+            </div>
+            <div class="fire">
+            <img class="pokeball" src="./images/cartoon-pokeball-sticker.png" alt="A cartoon image of a red and white pokeball">
+            <button class="fireBtn" id="fireBtn">Fire</button>
+            </div>
+        </div>
+        <div class="scoreArea" id="scoreArea">
+            <p>Opponent's Score</p>
+            <h1 class="oppScore" id="oppScore">0</h1>
+        </div>
+    </div>
+    <h2 id="opponent">
+    </h2>
+    <h2 id="results">
+    </h2>
+    <h1 id="final">
+    </h1>
+    <script src="gameV2.js"></script>
 </body>
 </html>

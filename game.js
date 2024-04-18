@@ -1,5 +1,5 @@
 // Get random choice of options from computer
-let arr = ["ROCK", "PAPER", "SCISSORS"];
+let arr = ["WATER", "GRASS", "FIRE"];
 let playerSelection;
 let compSelection;
 let playerWin = 0;
@@ -13,7 +13,7 @@ function getComputerChoice() {
 
 // Get selection from user
 function getPlayerChoice () {
-    let playerSelection = prompt("Rock, Paper, or Scissors?: ");
+    let playerSelection = prompt("Water, Grass, or Fire?: ");
     playerSelection = playerSelection.toUpperCase();
     console.log(playerSelection);
     return playerSelection;
@@ -27,9 +27,9 @@ function playRound() {
     let playerSelection = getPlayerChoice();
 
     if (
-        (playerSelection === "ROCK" && compSelection === "SCISSORS") ||
-        (playerSelection === "SCISSORS" && compSelection === "PAPER") ||
-        (playerSelection === "PAPER" && compSelection === "ROCK")) {
+        (playerSelection === "WATER" && compSelection === "FIRE") ||
+        (playerSelection === "FIRE" && compSelection === "GRASS") ||
+        (playerSelection === "GRASS" && compSelection === "WATER")) {
         roundWinner = `You win! ${playerSelection} beats ${compSelection}!`;
         playerWin++;
         }
